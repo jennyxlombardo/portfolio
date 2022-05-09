@@ -1,0 +1,10 @@
+.groupContainer {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #23d5ab;
+}
+
+.imgGroup {
+  height: 300px;
+}

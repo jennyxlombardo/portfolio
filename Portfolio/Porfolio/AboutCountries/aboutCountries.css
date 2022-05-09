@@ -1,0 +1,174 @@
+body {
+  background-color: #ee7752;
+  display: flex;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+.aboutCount {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: white solid 1px;
+  padding: 20px;
+  margin-left: 51%;
+}
+
+.ballWrapper {
+  width: 140px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  margin: -150px 0 0 -70px;
+ 
+  transition: all 5s linear 0s;
+}
+
+.info{
+  display: flex;
+}
+
+.massiveContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.ballWrapper:active {
+  transform: scale(0);
+}
+
+.bouncingBall {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background: #ccc;
+  animation: bounce 2s;
+  transform: translateY(0px);
+  animation-iteration-count: infinite;
+  position: absolute;
+  margin-top: 350px;
+  z-index: 1;
+  box-shadow: inset 5px -5px 5px rgba(0, 0, 0, 0.2),
+    15px 15px 2px rgba(0, 0, 0, 0.04);
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+   ;
+  }
+  40% {
+  }
+  50% {
+    top: 140px;
+    height: 140px;
+    -webkit-animation-timing-function: ease-out;
+    background-color: rgb(172, 169, 169);
+  }
+
+  55% {
+    top: 160px;
+    height: 120px;
+    border-radius: 70px / 60px;
+    -webkit-animation-timing-function: ease-in;
+   
+  }
+  65% {
+    top: 120px;
+    height: 140px;
+    border-radius: 70px;
+    -webkit-animation-timing-function: ease-out;
+  
+  }
+  95% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+    
+  }
+  100% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+   
+  }
+}
+.ballShadow {
+  width: 60px;
+  height: 75px;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 50%;
+  background: rgba(20, 20, 20, 0.1);
+  box-shadow: 0px 0 20px 35px rgba(20, 20, 20, 0.1);
+  border-radius: 30px / 40px;
+  animation: shrink 2s infinite;
+  transition: all 5s linear 0s;
+
+}
+.ballShadow:active {
+   transform: scale(0);
+ }
+@keyframes shrink {
+  0% {
+    bottom: 0;
+    margin-right: -30px;
+    width: 60px;
+    height: 75px;
+    background: rgba(20, 20, 20, 0.1);
+    box-shadow: 0px 0 20px 35px rgba(20, 20, 20, 0.1);
+    border-radius: 30px / 40px;
+  }
+  50% {
+    bottom: 30px;
+    margin-right: -10px;
+    width: 20px;
+    height: 5px;
+    background: rgba(20, 20, 20, 0.3);
+    box-shadow: 0px 0 20px 35px rgba(20, 20, 20, 0.3);
+    border-radius: 20px / 20px;
+  }
+  55% {
+    bottom: 10px;
+    margin-right: -15px;
+    width: 30px;
+    height: 15px;
+    background: rgba(20, 20, 20, 0.3);
+    box-shadow: 0px 0 20px 35px rgba(20, 20, 20, 0.3);
+    border-radius: 20px / 20px;
+  }
+  65% {
+    bottom: 5px;
+    margin-right: -5px;
+    width: 30px;
+    height: 30px;
+    background: rgba(20, 20, 20, 0.3);
+    box-shadow: 0px 0 20px 35px rgba(20, 20, 20, 0.3);
+    border-radius: 20px / 20px;
+  }
+  95% {
+    bottom: 0;
+    margin-right: -20px;
+    width: 60px;
+    height: 75px;
+    background: rgba(20, 20, 20, 0.1);
+    box-shadow: 0px 0 20px 35px rgba(20, 20, 20, 0.1);
+    border-radius: 30px / 40px;
+  }
+  100% {
+    bottom: 0;
+    margin-right: -30px;
+    width: 60px;
+    height: 75px;
+    background: rgba(20, 20, 20, 0.1);
+    box-shadow: 0px 0 20px 35px rgba(20, 20, 20, 0.1);
+    border-radius: 30px / 40px;
+  }
+}
